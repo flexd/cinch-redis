@@ -1,7 +1,26 @@
-GEM
+GIT
+  remote: https://github.com/cinchrb/cinch.git
+  revision: 3f151bb0b7d1f9877c0789082dbec8b7842ee861
+  branch: v2.0.0
   specs:
+    cinch (2.0.0)
+
+PATH
+  remote: .
+  specs:
+    cinch-redis (0.1)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    json (1.6.3)
+    redis (2.2.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  cinch!
+  cinch-redis!
+  json
+  redis

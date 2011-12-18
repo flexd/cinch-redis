@@ -5,7 +5,6 @@ require "json"
 module Cinch
   class Storage
     class Redis < Storage
-      VERSION = "0.1"
       def initialize(options, plugin)
         # New Redis object, thread safe by default since 2.2.0
         @redis = ::Redis.new(:host => 'localhost', :port => 6379)
